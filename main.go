@@ -22,7 +22,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	topPosition := handler.NewTopPositions(10)
+	topPosition := handler.NewTopPositions(10, 15)
 
 	go c.Process(topPosition.Process)
 
